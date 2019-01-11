@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Daniel Cheung</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<nav class="container">
+    <img src="images/identity.png" class="logo">
+    <a href="#about-me">About Me</a>
+    <a href="#past-works">Past Works</a>
+</nav>
+<div class="container">
+    <h1 id="about-me">About Me</h1>
+    <p>I am Daniel Cheung, currently a Computer Science student in HKUST. I like programming and designing.</p>
+    <h3>Skill Set</h3>
+    <ul>
+        <li>Front-end web development: HTML5, JS (jQuery, Vue), CSS(Bootstrap, SCSS)</li>
+        <li>Back-end web development: PHP (Laravel)</li>
+        <li>Embedded Programming</li>
+        <li>C++</li>
+        <li>Java</li>
+        <li>Designing</li>
+    </ul>
+</div>
+<div class="container">
+    <h1 id="past-works">Past Works</h1>
+    <h2>Newman Catholic College Website</h2>
+    <p>This is the website of my secondary school. And where I started learning web. I developed the framework for my school website during my Form 3-6 (Grade 9-12) years. The website was like Apple's website in 1997: stuck to the top left hand corner of my LCD monitor, too many image buttons etc. It was typical of 90s to early 2000s style.</p>
+
+    <p>I have upgraded the once, completely static web server, from requiring to edit source HTML to show updates, to a more dynamic WIMP stack. I had more plans with the site then, but it was the first time I had to learn to reconcile in design choices with my first ever "design client".</p>
+
+    <div class="split-col">
+        <div>
+            <img class="fluid" src="images/newman/original.jpg">
+        </div>
+        <div>
+            Screen shot of the original website. This is the only one I have managed to find.
+        </div>
+    </div>
+
+    <div style="max-height: 500px; overflow: hidden; position:relative">
+        <img class="fluid" src="images/newman/mid.png">
+        <div class="shade reverse"></div>
+    </div>
+
+    <figure class="figure">First version. This is before I have discovered Bootstrap. The layout was the same as the original, and it had been a bit rough before I was permitted to alter the layout later.</figure>
+
+    <img class="fluid" src="images/newman/latest.png">
+    <figure class="figure">Current version (2013). This version uses Bootstrap 3 for a responsive design, jQuery and custom PHP + MySQL.</figure>
+
+    <p>The website had several requirements:</p>
+
+    <ul>
+        <li>The picture of Cardinal Newman must be very visible.</li>
+        <li>All elements in the original homepage must be preserved.</li>
+    </ul>
+
+    <p>The project did not include a complete revamp of the entire website, since the scale was too big for one person to handle. Instead, newly updated web pages would utilize the newly defined universal styles for display, and older web pages would be left as is.</p>
+
+    <p>Since the inclusion of database, data can be searched. New UI has been added to accommodate this.</p>
+
+    <h3>Technologies</h3>
+
+    <ul>
+        <li>WIMP</li>
+        <li>jQuery, Bootstrap for front-end</li>
+    </ul>
+
+    <h3>Link</h3>
+
+    <p><a href="http://www.newman.edu.hk">http://www.newman.edu.hk</a></p>
+
+    <h2>ROV Mission Helper</h2>
+    <p>The ROV Mission Helper was developed for The IET/MATE Hong Kong Underwater Robot Challenge 2017. It is a score keeping system designed specifically for the 15-min competition trial run, to replace pen and paper for calculating final rankings in previous years. Additionally, a detailed copy of the scores summary is emailed to the playing team after their trial.</p>
+
+    <h3>UI</h3>
+
+    <p>The UI is designed responsively to be used best on a tablet for its spaciousness and works well even on a phone.</p>
+
+    <img class="fluid" src="images/mission_helper/login.png">
+    <figure class="figure">Login screen.</figure>
+
+    <img class="fluid" src="images/mission_helper/welcome.png">
+    <figure class="figure">Welcome screen.</figure>
+
+    <img class="fluid" src="images/mission_helper/static.png">
+    <figure class="figure">Pre-trial vetting sheet.</figure>
+
+    <img class="fluid" src="images/mission_helper/dynamic.png">
+    <figure class="figure">Marking sheet during the 15-min trial run.</figure>
+
+    <img class="fluid" src="images/mission_helper/ranking.png">
+    <figure class="figure">Scoresheet</figure>
+
+    <div style="max-height: 500px; overflow: hidden; position:relative">
+        <img class="fluid" src="images/mission_helper/email.png">
+        <div class="shade reverse"></div>
+    </div>
+    <figure class="figure">Attached HTML summary in email.</figure>
+
+    <h3>Technologies</h3>
+
+    <ul>
+        <li>LAMP</li>
+        <li>Mustache for templating</li>
+        <li>jQuery, Bootstrap for front-end</li>
+    </ul>
+
+    <p>Different score sheets are described in JSON format, (including the above vetting and trial sheets). They are then loaded by the server and a new MySQL table is created for each score sheet. And they are displayed in a list in the welcome screen.</p>
+
+    <h2>HKUST Robotics Team - Robot Design Contest 2018 - Marketplace</h2>
+
+    <p>Every year, the HKUST Robotics Team holds the Robot Design Contest for its new recruits. To build robots for the competition, they need to purchase with provided credits more expensive parts. In previous years, paper forms were used for record, however, it was unreliable since multiple people may hand in form to purchase some last remaining products.</p>
+    <p>An internal site was thus created to ease this process.</p>
+
+    <h3>UI</h3>
+
+    <img class="fluid" src="images/marketplace/home.png">
+    <figure class="figure">Home screen listing all purchasable items.</figure>
+
+    <img class="fluid" src="images/marketplace/details.png">
+    <figure class="figure">Item details.</figure>
+
+    <img class="fluid" src="images/marketplace/purchases.png">
+    <figure class="figure">Team purchase log.</figure>
+
+    <img class="fluid" src="images/marketplace/balance.png">
+    <figure class="figure">Team balance.</figure>
+
+    <h3>Technology</h3>
+
+    <ul>
+        <li>LAMP</li>
+        <li>PHP Laravel for backend</li>
+        <li>Vue and Bootstrap for frontend</li>
+    </ul>
+
+    <p>In terms of security, it has been delegated to the school's provided CAS system.</p>
+
+    <h2>HKUST Robotics Team - Robot Design Contest 2018 - Scoreboard</h2>
+
+    <p>This system has been designed with broadcasting in mind, for the competition is produced in a show format by the school's media team.</p>
+
+    <h3>UI</h3>
+
+    The visual elements must be eye-catching. Suitable amount of animation is added to the various UIs.
+
+    <img class="fluid" src="images/scoreboard/mockup.png">
+    <figure class="figure">Scoreboard mock up.</figure>
+
+    <img class="fluid" src="images/scoreboard/implementation.png">
+    <figure class="figure">Scoreboard implementation in HTML and CSS.</figure>
+
+    <img class="fluid" src="images/scoreboard/brackets.png">
+    <figure class="figure">Brackets of the competition.</figure>
+
+    <h3>Technologies</h3>
+
+    <ul>
+        <li>Firebase for database.</li>
+        <li>Vue for frontend.</li>
+    </ul>
+
+    <h3>Links</h3>
+
+    <p><a href="https://github.com/dipsywong98/ScoreBoard/">https://github.com/dipsywong98/ScoreBoard/</a>. The repo contains live demo.</p>
+</div>
+</body>
+</html>

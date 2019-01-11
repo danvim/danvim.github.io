@@ -1,0 +1,142 @@
+
+$white: #fff;
+$black: #000;
+$slate: #27454a;
+$blue: #3b80ff;
+$cyan: #2dcce0;
+$teal: #2ae8cf;
+$orange: #ffa32e;
+$purple: #a130ff;
+$gray: #222222;
+
+@font-face {
+  font-family: 'fx50';
+  src: url('../fonts/fx50-webfont.woff2') format('woff2'), url('../fonts/fx50-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: $slate;
+}
+
+body {
+  $gray-height: 150px;
+
+  color: $white;
+  font-family: "Fira Sans", sans-serif;
+  font-size:16px;
+  min-height: 100vh;
+
+  @include scrimGradient($gray);
+  background-size: auto 500px;
+  background-repeat: repeat-x;
+  background-position: 0 $gray-height;
+
+  &::before {
+    content: " ";
+    position: absolute;
+    display: block;
+    z-index: -1;
+    top:0;
+    height: $gray-height;
+    background-color: $gray;
+    width: 100%;
+    left:0;
+  }
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Montserrat SemiBold", sans-serif;
+  font-weight: 600;
+  color: $cyan;
+  margin-bottom: 0.6rem;
+}
+
+h3,h4,h5,h6 {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+p, ul, ol {
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+ul, ol {
+  padding-left: 1rem;
+}
+
+.container {
+  margin: 0 auto 5rem;
+  padding: 0 15px;
+  @include respond-above("sm") {
+    width: 900px;
+  }
+}
+
+a {
+  display: inline-block;
+  position: relative;
+  padding: 0 0.1em;
+  margin: 0;
+  z-index: 1;
+  transition: color 0.3s ease;
+  color: inherit;
+  text-decoration: none;
+
+  &::before {
+    position: absolute;
+    z-index: -2;
+    bottom:0;
+    left:0;
+    width:100%;
+    height: 3px;
+    content: " ";
+    background-color: $cyan;
+  }
+
+  &::after {
+    position: absolute;
+    z-index: -1;
+    content: " ";
+    background-color: $cyan;
+    height: 100%;
+    width: 0;
+    transition: width 0.3s ease;
+    top:0;
+    right:0;
+  }
+
+  &:hover {
+    color: $gray !important;
+
+    &::after {
+      width: 100%;
+      left: 0;
+      right: unset;
+    }
+  }
+
+  &:visited {
+    color: inherit;
+  }
+}
+
+img {
+  &.fluid {
+    max-width: 100%;
+    display: block;
+  }
+}
+
+.figure {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 10px 20px;
+  margin-bottom: 2rem;
+}

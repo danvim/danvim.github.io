@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Montserrat:600');
+
+@import "scrim";
+@import "breakpoints";
+@import "site";
+
+.logo {
+  height: 150px;
+}
+
+body > nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  a {
+    font-size: 150%;
+    font-family: "Montserrat SemiBold", sans-serif;
+    margin: 0 20px;
+  }
+}
+
+.shade {
+  @include scrimGradient($gray);
+  position: absolute;
+  bottom:0;
+  left:0;
+  height: 50%;
+  width: 100%;
+  opacity: 0.8;
+
+  &.reverse {
+    transform: rotate(180deg);
+  }
+}
+
+.split-col {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2rem;
+
+  > * {
+    flex: 1;
+    padding: 15px;
+  }
+}
