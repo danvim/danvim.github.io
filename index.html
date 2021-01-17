@@ -51,55 +51,292 @@
     <h1 id="past-works">Past Works</h1>
 
     <section>
-        <h2>Newman Catholic College Website</h2>
-        <p>This is the website of my secondary school. And where I started learning web. I developed the framework for my school website during my Form 3-6 (Grade 9-12) years. The website was like Apple's website in 1997: stuck to the top left hand corner of my LCD monitor, too many image buttons etc. It was typical of 90s to early 2000s style.</p>
+        <h2>ZINC - HKUST Best Final Year Project (2020)</h2>
 
-        <p>I have upgraded the once completely static web server, from requiring to edit source HTML to show updates, to a more dynamic WIMP stack. I had more plans with the site then, but it was the first time I had to learn to reconcile in design choices with my first ever "design client".</p>
+        <p>
+            Automatic grading platform for programming assignments. The name is an acronym for "ZINC Is Not CASS", where
+            CASS was the homework submission system of the Computer Science & Engineering department of the HKUST.
+        </p>
 
-        <div class="split-col">
-            <div>
-                <img class="fluid" src="images/newman/original.jpg">
-            </div>
-            <div>
-                <p>Screen shot of the original website. This is the only one I have managed to find.</p>
-            </div>
-        </div>
+        <p>
+            Authors:
+            <a href="https://github.com/bryanchun">Bryan Chun</a>,
+            <a href="https://github.com/danvim">Daniel Cheung</a>,
+            <a href="https://github.com/Derppening">David Mak</a>,
+            <a href="https://github.com/dipsywong98">Dipsy Wong</a>
+            <br>
+            Advisor:
+            Dr. Desmond TSOI
+        </p>
 
-        <div style="max-height: 500px; overflow: hidden; position:relative">
-            <img class="fluid" src="images/newman/mid.png">
-            <div class="shade reverse"></div>
-        </div>
-
-        <figure class="figure">First version. This is before I have discovered Bootstrap. The layout was the same as the original, and it had been a bit rough before I was permitted to alter the layout later.</figure>
-
-        <img class="fluid" src="images/newman/latest.png">
-        <figure class="figure">Current version (2013). This version uses Bootstrap 3 for a responsive design, jQuery and custom PHP + MySQL.</figure>
-
-        <p>The website had several requirements:</p>
+        <p>The Docker-powered platform handles:</p>
 
         <ul>
-            <li>The picture of Cardinal Newman must be very visible.</li>
-            <li>All elements in the original homepage must be preserved.</li>
+            <li>Students, TAs account synchronization</li>
+            <li>Assignment upload</li>
+            <li>Assignment auto-grading</li>
+            <li>Report generation</li>
+            <li>Report-viewing</li>
         </ul>
 
-        <p>The project did not include a complete revamp of the entire website, since the scale was too big for one person to handle. Instead, newly updated web pages would utilize the newly defined universal styles for display, and older web pages would be left as is.</p>
+        <h3>Awards & Achievements</h3>
 
-        <p>Since the inclusion of database, data can be searched. New UI has been added to accommodate this.</p>
+        <ul>
+            <li><a href="https://www.cse.ust.hk/ug/fyp/bestfyp/">Best FYP</a></li>
+            <li><a href="https://www.cse.ust.hk/ug/fyp/bestfyp/video/#best_fyp_videos">Best FYP Video</a></li>
+            <li>Finalist in HKUST President's Cup</li>
+        </ul>
+
+        <p>
+            The scope of the platform is comparable to the more popular Submitty, although our software has only been
+            developed in under a year, one of our distinctive features is the containerization of assignment grading,
+            and our pipeline grading philosophy. Our platform also specifically target the use cases for the people of
+            HKUST as the initial effort to gain use base.
+        </p>
+
+        <p>
+            ZINC is still actively being used within HKUST, with maintenance and development efforts put forth to expand
+            the feature set.
+        </p>
 
         <h3>Technologies</h3>
 
         <ul>
-            <li>WIMP</li>
-            <li>jQuery, Bootstrap for front-end</li>
+            <li>React, Next.js, TypeScript for frontend UI</li>
+            <li>PHP Laravel for REST API</li>
+            <li>Docker for deployment and docker-in-docker for assignment auto-grading</li>
+            <li>Redis for caching and IPC messaging</li>
+            <li>Postgres DB for persistent data storage</li>
+            <li>Kotlin for auto-grading logic</li>
         </ul>
 
-        <h3>Link</h3>
+        <h3>Best FYP Video</h3>
 
-        <p><a href="http://www.newman.edu.hk">http://www.newman.edu.hk</a></p>
+        <video class="fluid" controls>
+            <source src="https://www.cse.ust.hk/ug/fyp/posters/gallery/2019-2020/DES2.mp4"/>
+        </video>
+        <figure class="figure">This 3-minute video was submitted to compete in the <a href="https://www.cse.ust.hk/ug/fyp/bestfyp/video/#best_fyp_videos">Best FYP Video award</a>.</figure>
+
+        <h3>Presentation</h3>
+
+        <div class="embed-responsive embed-responsive-16by9" style="margin-bottom: 0">
+            <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/z9EJyzYILHI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <figure class="figure">Final Presentation (40 mins) to Second Reader</figure>
+
+        <h3>Posters Submitted for HKUST President's Cup</h3>
+
+        <p><img class="fluid" src="https://drive.google.com/uc?export=download&amp;id=1V7NqHyhtTBnLRJC7InBwtsBScSqkY627" alt=""><br>
+            <img class="fluid" src="https://drive.google.com/uc?export=download&amp;id=1v7g54OqlFc96pJntFs7GKkenbXU_RzfF" alt=""></p>
+
+        <h3>Final Report</h3>
+
+        <embed type="application/pdf" src="files/64_DES2_Final_MinSize.pdf" class="fluid" >
+
+        <h3>Links</h3>
+
+        <ul>
+            <li><a href="https://www.cse.ust.hk/ug/fyp/bestfyp/">HKUST CSE - List of Distinguished Final Year Projects</a></li>
+            <li><a href="https://www.cse.ust.hk/ug/fyp/bestfyp/video/#best_fyp_videos">HKUST CSE - Best FYP/FYT Video Award</a></li>
+        </ul>
     </section>
 
     <section>
-        <h2>Procal - Programmable Android Calculator</h2>
+        <h2>HKUST Robotics Team - Robot Design Contest 2018 - Scoreboard (2018)</h2>
+
+        <p>This system has been designed with broadcasting in mind, for the competition is produced in a show format by the school's media team.</p>
+
+        <h3>UI</h3>
+
+        The visual elements must be eye-catching. Suitable amount of animation is added to the various UIs.
+
+        <img class="fluid" src="images/scoreboard/mockup.png">
+        <figure class="figure">Scoreboard mock up.</figure>
+
+        <img class="fluid" src="images/scoreboard/implementation.png">
+        <figure class="figure">Scoreboard implementation in HTML and CSS.</figure>
+
+        <img class="fluid" src="images/scoreboard/brackets.png">
+        <figure class="figure">Brackets of the competition.</figure>
+
+        <h3>Technologies</h3>
+
+        <ul>
+            <li>Firebase for database.</li>
+            <li>Vue for frontend.</li>
+        </ul>
+
+        <h3>Links</h3>
+
+        <p><a href="https://github.com/dipsywong98/ScoreBoard/">https://github.com/dipsywong98/ScoreBoard/</a>. The repo contains live demo.</p>
+    </section>
+
+    <section>
+        <h2>HKUST Robotics Team - Robot Design Contest 2018 - Marketplace (2018)</h2>
+
+        <p>Every year, the HKUST Robotics Team holds the Robot Design Contest for its new recruits. To build robots for the competition, they need to purchase with provided credits more expensive parts. In previous years, paper forms were used for record, however, it was unreliable since multiple people may hand in form to purchase some last remaining products.</p>
+        <p>An internal site was thus created to ease this process.</p>
+
+        <h3>UI</h3>
+
+        <img class="fluid" src="images/marketplace/home.png">
+        <figure class="figure">Home screen listing all purchasable items.</figure>
+
+        <img class="fluid" src="images/marketplace/details.png">
+        <figure class="figure">Item details.</figure>
+
+        <img class="fluid" src="images/marketplace/purchases.png">
+        <figure class="figure">Team purchase log.</figure>
+
+        <img class="fluid" src="images/marketplace/balance.png">
+        <figure class="figure">Team balance.</figure>
+
+        <h3>Technology</h3>
+
+        <ul>
+            <li>LAMP</li>
+            <li>PHP Laravel for backend</li>
+            <li>Vue and Bootstrap for frontend</li>
+        </ul>
+
+        <p>In terms of security, it has been delegated to the school's provided CAS system.</p>
+    </section>
+
+    <section>
+        <h2>HKUST Robotics Team - Robot Design Contest 2018 - Gamemaster (2018)</h2>
+
+        <p>I was one of 3 people in charge of the Robot Design Contest 2018, from game rule making, to event organization.</p>
+
+        <p>The entire recruitment process consists of the following processes:</p>
+
+        <ul>
+            <li>Recruitment workshops</li>
+            <li>Basics training tutorials in software/hardware/mechanical</li>
+            <li>Robot Design Contest</li>
+            <li>Sub-team selection interviews</li>
+        </ul>
+
+        <h3>Rule Book</h3>
+
+        <embed type="application/pdf" src="files/Game_Rules_v3.pdf" class="fluid" >
+
+        <h3>Photos</h3>
+
+        <img class="fluid" src="images/robotics/foam.jpg">
+        <figure class="figure">Posters explaining the contest.</figure>
+
+        <img class="fluid" src="images/robotics/contestants.jpg">
+        <figure class="figure">Image of all contestants and helpers after the final competition. <a href="https://www.facebook.com/ustrobotics/photos/a.146536828760361/2026273050786720">HKUST Robotics Team Facebook Image</a></figure>
+
+        <h3>Video</h3>
+
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/IMOQItFXDcU?rel=0" allowfullscreen=""></iframe>
+        </div>
+    </section>
+
+    <section>
+        <h2>HKUST Robotics Team - 2017 Recruitment Poster (2017)</h2>
+
+        <img class="fluid" src="images/robotics/posterv4red-01.png">
+        <figure class="figure">Recruitment Poster (display size)</figure>
+
+        <p>The finished product uses the Red in the Robotics Team logo as a start, with the palette consisting of colors around this hue. Small components occupy the top slanted trapezium, consisting of aspects from software, electronics and mechanical. Silhouettes of three robots from the three sub-teams are placed on the right, representing the Robotics Team as a whole.</p>
+    </section>
+
+    <section>
+        <h2>HKUST Underwater Robot Competition NFC Credit System</h2>
+
+        <img class="fluid" src="images/nfc/nfc.png" style="margin-bottom: 2rem">
+
+        <h3>Technologies</h3>
+
+        <ul>
+            <li>C#</li>
+            <li>NFC</li>
+        </ul>
+
+        <h3>Links</h3>
+
+        <ul>
+            <li><a href="https://www.facebook.com/hkustuwrobot/">HKUST Underwater Robot Competition Facebook</a></li>
+            <li><a href="https://github.com/LeeChunHei/Underwater_Robot_NFC">https://github.com/LeeChunHei/Underwater_Robot_NFC</a></li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>ROV Mission Helper (2017)</h2>
+        <p>The ROV Mission Helper was developed for The IET/MATE Hong Kong Underwater Robot Challenge 2017. It is a score keeping system designed specifically for the 15-min competition trial run, to replace pen and paper for calculating final rankings in previous years. Additionally, a detailed copy of the scores summary is emailed to the playing team after their trial.</p>
+
+        <h3>UI</h3>
+
+        <p>The UI is designed responsively to be used best on a tablet for its spaciousness and works well even on a phone.</p>
+
+        <img class="fluid" src="images/mission_helper/login.png">
+        <figure class="figure">Login screen.</figure>
+
+        <img class="fluid" src="images/mission_helper/welcome.png">
+        <figure class="figure">Welcome screen.</figure>
+
+        <img class="fluid" src="images/mission_helper/static.png">
+        <figure class="figure">Pre-trial vetting sheet.</figure>
+
+        <img class="fluid" src="images/mission_helper/dynamic.png">
+        <figure class="figure">Marking sheet during the 15-min trial run.</figure>
+
+        <img class="fluid" src="images/mission_helper/ranking.png">
+        <figure class="figure">Scoresheet</figure>
+
+        <div style="max-height: 500px; overflow: hidden; position:relative">
+            <img class="fluid" src="images/mission_helper/email.png">
+            <div class="shade reverse"></div>
+        </div>
+        <figure class="figure">Attached HTML summary in email.</figure>
+
+        <h3>Technologies</h3>
+
+        <ul>
+            <li>LAMP</li>
+            <li>Mustache for templating</li>
+            <li>jQuery, Bootstrap for front-end</li>
+        </ul>
+
+        <p>Different score sheets are described in JSON format, (including the above vetting and trial sheets). They are then loaded by the server and a new MySQL table is created for each score sheet. And they are displayed in a list in the welcome screen.</p>
+    </section>
+
+    <section>
+        <h2>MATE ROV 2017 All-Rounded Winner - HKUST Epoxsea Beluga (2017)</h2>
+
+        <p>I was in the HKUST Robotics Team ROV subteam in 2017. For the design aspect, I designed the color and typography style guides for the technical documentation.</p>
+
+        <embed type="application/pdf" src="files/HKUST_EPOXSEA_TechReport_2017.pdf" class="fluid" >
+
+        <h3>Design</h3>
+
+        <p>The Beluga logo was rendered in Blender and color retouched afterwards.</p>
+
+        <img class="fluid" src="images/rov/Beluga transparent.png">
+        <figure class="figure">Beluga logo</figure>
+
+        <img class="fluid" src="images/rov/Beluga gray.png">
+        <figure class="figure">Gray Beluga logo</figure>
+
+        <div style="display: flex;">
+            <div style="margin-right: 2rem">
+                <img class="fluid" src="images/rov/Beluga square transparent.png">
+                <figure class="figure">Square Beluga logo</figure>
+            </div>
+            <div>
+                <img class="fluid" src="images/rov/Beluga square gray.png">
+                <figure class="figure">Square gray Beluga logo</figure>
+            </div>
+        </div>
+
+        <p>Color choices of the design surrounds the oceanic teal color. The typeface was custom crafted from geometric shapes. The overall pattern of the design is low-poly.</p>
+    </section>
+
+    <section>
+        <h2>Procal - Programmable Android Calculator (2016)</h2>
 
         <p>This app was made for the HKUST Mobile App Design Contest in 2016 by a team of 4. The concept was to make a CASIO-FX50 program compatible calculator app. The team is as follows:</p>
 
@@ -147,198 +384,53 @@
     </section>
 
     <section>
-        <h2>MATE ROV 2017 All-Rounded Winner - HKUST Epoxsea Beluga</h2>
+        <h2>Newman Catholic College Website - Where I started (2014-2016)</h2>
+        <p>This is the website of my secondary school. And where I started learning web. I developed the framework for my school website during my Form 3-6 (Grade 9-12) years. The website was like Apple's website in 1997: stuck to the top left hand corner of my LCD monitor, too many image buttons etc. It was typical of 90s to early 2000s style.</p>
 
-        <p>I was in the HKUST Robotics Team ROV subteam in 2017. For the design aspect, I designed the color and typography style guides for the technical documentation.</p>
+        <p>I have upgraded the once completely static web server, from requiring to edit source HTML to show updates, to a more dynamic WIMP stack. I had more plans with the site then, but it was the first time I had to learn to reconcile in design choices with my first ever "design client".</p>
 
-        <embed type="application/pdf" src="files/HKUST_EPOXSEA_TechReport_2017.pdf" class="fluid" >
-
-        <h3>Design</h3>
-
-        <p>The Beluga logo was rendered in Blender and color retouched afterwards.</p>
-
-        <img class="fluid" src="images/rov/Beluga transparent.png">
-        <figure class="figure">Beluga logo</figure>
-
-        <img class="fluid" src="images/rov/Beluga gray.png">
-        <figure class="figure">Gray Beluga logo</figure>
-
-        <div style="display: flex;">
-            <div style="margin-right: 2rem">
-                <img class="fluid" src="images/rov/Beluga square transparent.png">
-                <figure class="figure">Square Beluga logo</figure>
+        <div class="split-col">
+            <div>
+                <img class="fluid" src="images/newman/original.jpg">
             </div>
             <div>
-                <img class="fluid" src="images/rov/Beluga square gray.png">
-                <figure class="figure">Square gray Beluga logo</figure>
+                <p>Screen shot of the original website. This is the only one I have managed to find.</p>
             </div>
         </div>
 
-        <p>Color choices of the design surrounds the oceanic teal color. The typeface was custom crafted from geometric shapes. The overall pattern of the design is low-poly.</p>
-    </section>
-
-    <section>
-        <h2>ROV Mission Helper</h2>
-        <p>The ROV Mission Helper was developed for The IET/MATE Hong Kong Underwater Robot Challenge 2017. It is a score keeping system designed specifically for the 15-min competition trial run, to replace pen and paper for calculating final rankings in previous years. Additionally, a detailed copy of the scores summary is emailed to the playing team after their trial.</p>
-
-        <h3>UI</h3>
-
-        <p>The UI is designed responsively to be used best on a tablet for its spaciousness and works well even on a phone.</p>
-
-        <img class="fluid" src="images/mission_helper/login.png">
-        <figure class="figure">Login screen.</figure>
-
-        <img class="fluid" src="images/mission_helper/welcome.png">
-        <figure class="figure">Welcome screen.</figure>
-
-        <img class="fluid" src="images/mission_helper/static.png">
-        <figure class="figure">Pre-trial vetting sheet.</figure>
-
-        <img class="fluid" src="images/mission_helper/dynamic.png">
-        <figure class="figure">Marking sheet during the 15-min trial run.</figure>
-
-        <img class="fluid" src="images/mission_helper/ranking.png">
-        <figure class="figure">Scoresheet</figure>
-
         <div style="max-height: 500px; overflow: hidden; position:relative">
-            <img class="fluid" src="images/mission_helper/email.png">
+            <img class="fluid" src="images/newman/mid.png">
             <div class="shade reverse"></div>
         </div>
-        <figure class="figure">Attached HTML summary in email.</figure>
+
+        <figure class="figure">First version. This is before I have discovered Bootstrap. The layout was the same as the original, and it had been a bit rough before I was permitted to alter the layout later.</figure>
+
+        <img class="fluid" src="images/newman/latest.png">
+        <figure class="figure">Current version (2013). This version uses Bootstrap 3 for a responsive design, jQuery and custom PHP + MySQL.</figure>
+
+        <p>The website had several requirements:</p>
+
+        <ul>
+            <li>The picture of Cardinal Newman must be very visible.</li>
+            <li>All elements in the original homepage must be preserved.</li>
+        </ul>
+
+        <p>The project did not include a complete revamp of the entire website, since the scale was too big for one person to handle. Instead, newly updated web pages would utilize the newly defined universal styles for display, and older web pages would be left as is.</p>
+
+        <p>Since the inclusion of database, data can be searched. New UI has been added to accommodate this.</p>
 
         <h3>Technologies</h3>
 
         <ul>
-            <li>LAMP</li>
-            <li>Mustache for templating</li>
+            <li>WIMP</li>
             <li>jQuery, Bootstrap for front-end</li>
         </ul>
 
-        <p>Different score sheets are described in JSON format, (including the above vetting and trial sheets). They are then loaded by the server and a new MySQL table is created for each score sheet. And they are displayed in a list in the welcome screen.</p>
+        <h3>Link</h3>
+
+        <p><a href="http://www.newman.edu.hk">http://www.newman.edu.hk</a></p>
     </section>
 
-    <section>
-        <h2>HKUST Underwater Robot Competition NFC Credit System</h2>
-
-        <img class="fluid" src="images/nfc/nfc.png" style="margin-bottom: 2rem">
-
-        <h3>Technologies</h3>
-
-        <ul>
-            <li>C#</li>
-            <li>NFC</li>
-        </ul>
-
-        <h3>Links</h3>
-
-        <ul>
-            <li><a href="https://www.facebook.com/hkustuwrobot/">HKUST Underwater Robot Competition Facebook</a></li>
-            <li><a href="https://github.com/LeeChunHei/Underwater_Robot_NFC">https://github.com/LeeChunHei/Underwater_Robot_NFC</a></li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>HKUST Robotics Team - 2017 Recruitment Poster</h2>
-
-        <img class="fluid" src="images/robotics/posterv4red-01.png">
-        <figure class="figure">Recruitment Poster (display size)</figure>
-
-        <p>The finished product uses the Red in the Robotics Team logo as a start, with the palette consisting of colors around this hue. Small components occupy the top slanted trapezium, consisting of aspects from software, electronics and mechanical. Silhouettes of three robots from the three sub-teams are placed on the right, representing the Robotics Team as a whole.</p>
-    </section>
-
-    <section>
-        <h2>HKUST Robotics Team - Robot Design Contest 2018 - Gamemaster</h2>
-
-        <p>I was one of 3 people in charge of the Robot Design Contest 2018, from game rule making, to event organization.</p>
-
-        <p>The entire recruitment process consists of the following processes:</p>
-
-        <ul>
-            <li>Recruitment workshops</li>
-            <li>Basics training tutorials in software/hardware/mechanical</li>
-            <li>Robot Design Contest</li>
-            <li>Sub-team selection interviews</li>
-        </ul>
-
-        <h3>Rule Book</h3>
-
-        <embed type="application/pdf" src="files/Game_Rules_v3.pdf" class="fluid" >
-
-        <h3>Photos</h3>
-
-        <img class="fluid" src="images/robotics/foam.jpg">
-        <figure class="figure">Posters explaining the contest.</figure>
-
-        <img class="fluid" src="images/robotics/contestants.jpg">
-        <figure class="figure">Image of all contestants and helpers after the final competition. <a href="https://www.facebook.com/ustrobotics/photos/a.146536828760361/2026273050786720">HKUST Robotics Team Facebook Image</a></figure>
-
-        <h3>Video</h3>
-
-        <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/IMOQItFXDcU?rel=0" allowfullscreen=""></iframe>
-        </div>
-    </section>
-
-    <section>
-        <h2>HKUST Robotics Team - Robot Design Contest 2018 - Marketplace</h2>
-
-        <p>Every year, the HKUST Robotics Team holds the Robot Design Contest for its new recruits. To build robots for the competition, they need to purchase with provided credits more expensive parts. In previous years, paper forms were used for record, however, it was unreliable since multiple people may hand in form to purchase some last remaining products.</p>
-        <p>An internal site was thus created to ease this process.</p>
-
-        <h3>UI</h3>
-
-        <img class="fluid" src="images/marketplace/home.png">
-        <figure class="figure">Home screen listing all purchasable items.</figure>
-
-        <img class="fluid" src="images/marketplace/details.png">
-        <figure class="figure">Item details.</figure>
-
-        <img class="fluid" src="images/marketplace/purchases.png">
-        <figure class="figure">Team purchase log.</figure>
-
-        <img class="fluid" src="images/marketplace/balance.png">
-        <figure class="figure">Team balance.</figure>
-
-        <h3>Technology</h3>
-
-        <ul>
-            <li>LAMP</li>
-            <li>PHP Laravel for backend</li>
-            <li>Vue and Bootstrap for frontend</li>
-        </ul>
-
-        <p>In terms of security, it has been delegated to the school's provided CAS system.</p>
-    </section>
-
-    <section>
-        <h2>HKUST Robotics Team - Robot Design Contest 2018 - Scoreboard</h2>
-
-        <p>This system has been designed with broadcasting in mind, for the competition is produced in a show format by the school's media team.</p>
-
-        <h3>UI</h3>
-
-        The visual elements must be eye-catching. Suitable amount of animation is added to the various UIs.
-
-        <img class="fluid" src="images/scoreboard/mockup.png">
-        <figure class="figure">Scoreboard mock up.</figure>
-
-        <img class="fluid" src="images/scoreboard/implementation.png">
-        <figure class="figure">Scoreboard implementation in HTML and CSS.</figure>
-
-        <img class="fluid" src="images/scoreboard/brackets.png">
-        <figure class="figure">Brackets of the competition.</figure>
-
-        <h3>Technologies</h3>
-
-        <ul>
-            <li>Firebase for database.</li>
-            <li>Vue for frontend.</li>
-        </ul>
-
-        <h3>Links</h3>
-
-        <p><a href="https://github.com/dipsywong98/ScoreBoard/">https://github.com/dipsywong98/ScoreBoard/</a>. The repo contains live demo.</p>
-    </section>
 </div>
 </body>
 </html>

@@ -5,18 +5,20 @@ Inspired by Andreas Larson - https://github.com/larsenwork
 https://css-tricks.com/easing-linear-gradients/
 */
 @font-face {
-  font-family: 'fx50';
+  font-family: "fx50";
   src: url("../fonts/fx50-webfont.woff2") format("woff2"), url("../fonts/fx50-webfont.woff") format("woff");
   font-weight: normal;
-  font-style: normal; }
-
+  font-style: normal;
+}
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 html {
-  background-color: #27454a; }
+  background-color: #27454a;
+}
 
 body {
   color: #fff;
@@ -24,34 +26,58 @@ body {
   font-size: 16px;
   min-height: 100vh;
   line-height: 1.5;
-  background: #27454a; }
+  background: #27454a;
+}
 
 section {
-  margin-bottom: 15rem; }
-  section:first-child {
-    margin-top: 0; }
+  margin-bottom: 15rem;
+}
+section:first-child {
+  margin-top: 0;
+}
 
 h1, h2, h3, h4, h5, h6 {
   font-family: sans-serif;
   font-weight: 600;
   color: #2dcce0;
-  margin-bottom: 0.6rem; }
+  margin-bottom: 0.6rem;
+}
+
+h2 {
+  position: relative;
+}
+h2::after {
+  display: block;
+  content: " ";
+  height: 1px;
+  width: 50vw;
+  position: absolute;
+  bottom: 50%;
+  right: calc(100% + 20px);
+  background-color: #2dcce0;
+}
 
 h3, h4, h5, h6 {
-  color: rgba(255, 255, 255, 0.3); }
+  color: rgba(255, 255, 255, 0.3);
+}
 
 p, ul, ol {
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+}
 
 ul, ol {
-  padding-left: 1rem; }
+  padding-left: 1rem;
+}
 
 .container {
   margin: 0 auto;
-  padding: 0 15px; }
-  @media (min-width: 768px) {
-    .container {
-      width: 900px; } }
+  padding: 0 15px;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 900px;
+  }
+}
 
 a {
   display: inline-block;
@@ -61,48 +87,57 @@ a {
   z-index: 1;
   transition: color 0.3s ease;
   color: inherit;
-  text-decoration: none; }
-  a::before {
-    position: absolute;
-    z-index: -2;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    content: " ";
-    background-color: #2dcce0; }
-  a::after {
-    position: absolute;
-    z-index: -1;
-    content: " ";
-    background-color: #2dcce0;
-    height: 100%;
-    width: 0;
-    transition: width 0.3s ease;
-    top: 0;
-    right: 0; }
-  a:hover {
-    color: #222222 !important; }
-    a:hover::after {
-      width: 100%;
-      left: 0;
-      right: unset; }
-  a:visited {
-    color: inherit; }
+  text-decoration: none;
+}
+a::before {
+  position: absolute;
+  z-index: -2;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  content: " ";
+  background-color: #2dcce0;
+}
+a::after {
+  position: absolute;
+  z-index: -1;
+  content: " ";
+  background-color: #2dcce0;
+  height: 100%;
+  width: 0;
+  transition: width 0.3s ease;
+  top: 0;
+  right: 0;
+}
+a:hover {
+  color: #222222 !important;
+}
+a:hover::after {
+  width: 100%;
+  left: 0;
+  right: unset;
+}
+a:visited {
+  color: inherit;
+}
 
-img.fluid {
+.fluid {
   max-width: 100%;
-  display: block; }
+  display: block;
+}
 
 .figure {
   background-color: rgba(0, 0, 0, 0.4);
   padding: 10px 20px;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+}
 
 [type="application/pdf"].fluid {
   width: 100%;
   height: 60vh;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+}
 
 .embed-responsive {
   position: relative;
@@ -110,24 +145,29 @@ img.fluid {
   width: 100%;
   padding: 0;
   overflow: hidden;
-  margin-bottom: 2rem; }
-  .embed-responsive::before {
-    display: block;
-    content: ""; }
-  .embed-responsive .embed-responsive-item, .embed-responsive embed, .embed-responsive iframe, .embed-responsive object, .embed-responsive video {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0; }
+  margin-bottom: 2rem;
+}
+.embed-responsive::before {
+  display: block;
+  content: "";
+}
+.embed-responsive .embed-responsive-item, .embed-responsive embed, .embed-responsive iframe, .embed-responsive object, .embed-responsive video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
 
 .embed-responsive-16by9::before {
-  padding-top: 56.25%; }
+  padding-top: 56.25%;
+}
 
 .logo {
-  height: 150px; }
+  height: 150px;
+}
 
 body > nav {
   display: flex;
@@ -136,15 +176,19 @@ body > nav {
   background-color: #222222;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  margin-bottom: 5rem; }
-  body > nav a {
-    margin: 0 1rem;
-    font-size: 1.2rem; }
-  body > nav .logo {
-    height: 80px; }
-  body > nav .container {
-    display: flex;
-    align-items: center; }
+  margin-bottom: 5rem;
+}
+body > nav a {
+  margin: 0 1rem;
+  font-size: 1.2rem;
+}
+body > nav .logo {
+  height: 80px;
+}
+body > nav .container {
+  display: flex;
+  align-items: center;
+}
 
 .shade {
   background: linear-gradient(to bottom, #222222 0%, rgba(34, 34, 34, 0.738) 19%, rgba(34, 34, 34, 0.541) 34%, rgba(34, 34, 34, 0.382) 47%, rgba(34, 34, 34, 0.278) 56.5%, rgba(34, 34, 34, 0.194) 65%, rgba(34, 34, 34, 0.126) 73%, rgba(34, 34, 34, 0.075) 80.2%, rgba(34, 34, 34, 0.042) 86.1%, rgba(34, 34, 34, 0.021) 91%, rgba(34, 34, 34, 0.008) 95.2%, rgba(34, 34, 34, 0.002) 98.2%, rgba(34, 34, 34, 0) 100%);
@@ -153,14 +197,20 @@ body > nav {
   left: 0;
   height: 50%;
   width: 100%;
-  opacity: 0.8; }
-  .shade.reverse {
-    transform: rotate(180deg); }
+  opacity: 0.8;
+}
+.shade.reverse {
+  transform: rotate(180deg);
+}
 
 .split-col {
   display: flex;
   flex-direction: row;
-  margin-bottom: 2rem; }
-  .split-col > * {
-    flex: 1;
-    padding: 15px; }
+  margin-bottom: 2rem;
+}
+.split-col > * {
+  flex: 1;
+  padding: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */
