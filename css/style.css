@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Fira+Sans|Montserrat:600");
+@import url("https://fonts.googleapis.com/css?family=Inter:600");
 /*
 A simple little SCSS mixin for creating scrim gradients
 Inspired by Andreas Larson - https://github.com/larsenwork
@@ -22,7 +22,7 @@ html {
 
 body {
   color: #fff;
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   min-height: 100vh;
   line-height: 1.5;
@@ -37,7 +37,7 @@ section:first-child {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 600;
   color: #2dcce0;
   margin-bottom: 0.6rem;
