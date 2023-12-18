@@ -6,11 +6,13 @@
     <link href="css/style.css" rel="stylesheet">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PY2GJQZVRQ"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      window.dataLayer = window.dataLayer || []
 
-      gtag('config', 'G-PY2GJQZVRQ');
+      function gtag () {dataLayer.push(arguments)}
+
+      gtag('js', new Date())
+
+      gtag('config', 'G-PY2GJQZVRQ')
     </script>
 </head>
 <body>
@@ -27,12 +29,52 @@
         <p>I am Daniel Cheung, currently a Full-Stack Engineer at Credit Suisse.</p>
 
         <a href="https://danvim.github.io/cv/">My printable fullscreen CV</a>
-        <iframe class="embed-responsive-item" src="https://danvim.github.io/cv/" style="width: 100%; aspect-ratio: 1/1.4142; border:none"></iframe>
+        <iframe class="embed-responsive-item" src="https://danvim.github.io/cv/"
+                style="width: 100%; aspect-ratio: 1/1.4142; border:none"></iframe>
     </section>
 </div>
 <div class="container">
     <h1 id="past-works">Past Works</h1>
 
+    <section>
+        <h2>React pdfmake Reconciler (2023)</h2>
+
+        <p>
+            A small project I made over a week of a custom React renderer rendering to the pdfmake input descriptor
+            using react-reconciler, for producing PDFs.
+        </p>
+
+
+        <p>
+            Author:
+            <a href="https://github.com/danvim">Daniel Cheung</a>
+        </p>
+
+        <h3>Technologies</h3>
+
+        <ul>
+            <li>React</li>
+            <li>TypeScript</li>
+            <li>react-reconciler</li>
+            <li>pdfmake</li>
+            <li>Docusaurus for documentation site</li>
+        </ul>
+
+        <img class="fluid" src="images/react-pdfmake-reconciler/social-card.svg">
+        <figure class="figure">React pdfmake Reconciler logo</figure>
+        <img class="fluid" src="images/react-pdfmake-reconciler/react-devtools-demo.png">
+        <figure class="figure">Debugging PDF preview using React Developer Tools.</figure>
+
+        <h3>Links</h3>
+
+        <ul>
+            <li><a href="https://dev.to/danvim/building-a-pdfmake-react-render-g7h">Blog post on Dev.to</a></li>
+            <li><a href="https://danvim.github.io/react-pdfmake-reconciler">Project documentation</a></li>
+            <li><a href="https://github.com/danvim/react-pdfmake-reconciler">Project repository</a></li>
+            <li><a href="https://www.npmjs.com/package/react-pdfmake-reconciler">react-pdfmake-reconciler on NPM</a></li>
+        </ul>
+
+    </section>
     <section>
         <h2>Photosynthesis (2020-2022)</h2>
 
@@ -175,12 +217,17 @@
         <video class="fluid" controls>
             <source src="https://www.cse.ust.hk/ug/fyp/posters/gallery/2019-2020/DES2.mp4"/>
         </video>
-        <figure class="figure">This 3-minute video was submitted to compete in the <a href="https://www.cse.ust.hk/ug/fyp/bestfyp/video/#best_fyp_videos">Best FYP Video award</a>.</figure>
+        <figure class="figure">This 3-minute video was submitted to compete in the <a
+                href="https://www.cse.ust.hk/ug/fyp/bestfyp/video/#best_fyp_videos">Best FYP Video award</a>.
+        </figure>
 
         <h3>Presentation</h3>
 
         <div class="embed-responsive embed-responsive-16by9" style="margin-bottom: 0">
-            <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/z9EJyzYILHI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/z9EJyzYILHI"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
         </div>
         <figure class="figure">Final Presentation (40 mins) to Second Reader</figure>
 
@@ -191,20 +238,23 @@
 
         <h3>Final Report</h3>
 
-        <embed type="application/pdf" src="files/64_DES2_Final_MinSize.pdf" class="fluid" >
+        <embed type="application/pdf" src="files/64_DES2_Final_MinSize.pdf" class="fluid">
 
         <h3>Links</h3>
 
         <ul>
-            <li><a href="https://www.cse.ust.hk/ug/fyp/bestfyp/">HKUST CSE - List of Distinguished Final Year Projects</a></li>
-            <li><a href="https://www.cse.ust.hk/ug/fyp/bestfyp/video/#best_fyp_videos">HKUST CSE - Best FYP/FYT Video Award</a></li>
+            <li><a href="https://www.cse.ust.hk/ug/fyp/bestfyp/">HKUST CSE - List of Distinguished Final Year
+                Projects</a></li>
+            <li><a href="https://www.cse.ust.hk/ug/fyp/bestfyp/video/#best_fyp_videos">HKUST CSE - Best FYP/FYT Video
+                Award</a></li>
         </ul>
     </section>
 
     <section>
         <h2>HKUST Robotics Team - Robot Design Contest 2018 - Scoreboard (2018)</h2>
 
-        <p>This system has been designed with broadcasting in mind, for the competition is produced in a show format by the school's media team.</p>
+        <p>This system has been designed with broadcasting in mind, for the competition is produced in a show format by
+            the school's media team.</p>
 
         <h3>UI</h3>
 
@@ -228,13 +278,17 @@
 
         <h3>Links</h3>
 
-        <p><a href="https://github.com/dipsywong98/ScoreBoard/">https://github.com/dipsywong98/ScoreBoard/</a>. The repo contains live demo.</p>
+        <p><a href="https://github.com/dipsywong98/ScoreBoard/">https://github.com/dipsywong98/ScoreBoard/</a>. The repo
+            contains live demo.</p>
     </section>
 
     <section>
         <h2>HKUST Robotics Team - Robot Design Contest 2018 - Marketplace (2018)</h2>
 
-        <p>Every year, the HKUST Robotics Team holds the Robot Design Contest for its new recruits. To build robots for the competition, they need to purchase with provided credits more expensive parts. In previous years, paper forms were used for record, however, it was unreliable since multiple people may hand in form to purchase some last remaining products.</p>
+        <p>Every year, the HKUST Robotics Team holds the Robot Design Contest for its new recruits. To build robots for
+            the competition, they need to purchase with provided credits more expensive parts. In previous years, paper
+            forms were used for record, however, it was unreliable since multiple people may hand in form to purchase
+            some last remaining products.</p>
         <p>An internal site was thus created to ease this process.</p>
 
         <h3>UI</h3>
@@ -265,7 +319,8 @@
     <section>
         <h2>HKUST Robotics Team - Robot Design Contest 2018 - Gamemaster (2018)</h2>
 
-        <p>I was one of 3 people in charge of the Robot Design Contest 2018, from game rule making, to event organization.</p>
+        <p>I was one of 3 people in charge of the Robot Design Contest 2018, from game rule making, to event
+            organization.</p>
 
         <p>The entire recruitment process consists of the following processes:</p>
 
@@ -278,7 +333,7 @@
 
         <h3>Rule Book</h3>
 
-        <embed type="application/pdf" src="files/Game_Rules_v3.pdf" class="fluid" >
+        <embed type="application/pdf" src="files/Game_Rules_v3.pdf" class="fluid">
 
         <h3>Photos</h3>
 
@@ -286,12 +341,15 @@
         <figure class="figure">Posters explaining the contest.</figure>
 
         <img class="fluid" src="images/robotics/contestants.jpg">
-        <figure class="figure">Image of all contestants and helpers after the final competition. <a href="https://www.facebook.com/ustrobotics/photos/a.146536828760361/2026273050786720">HKUST Robotics Team Facebook Image</a></figure>
+        <figure class="figure">Image of all contestants and helpers after the final competition. <a
+                href="https://www.facebook.com/ustrobotics/photos/a.146536828760361/2026273050786720">HKUST Robotics
+            Team Facebook Image</a></figure>
 
         <h3>Video</h3>
 
         <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/IMOQItFXDcU?rel=0" allowfullscreen=""></iframe>
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/IMOQItFXDcU?rel=0"
+                    allowfullscreen=""></iframe>
         </div>
     </section>
 
@@ -301,7 +359,10 @@
         <img class="fluid" src="images/robotics/posterv4red-01.png">
         <figure class="figure">Recruitment Poster (display size)</figure>
 
-        <p>The finished product uses the Red in the Robotics Team logo as a start, with the palette consisting of colors around this hue. Small components occupy the top slanted trapezium, consisting of aspects from software, electronics and mechanical. Silhouettes of three robots from the three sub-teams are placed on the right, representing the Robotics Team as a whole.</p>
+        <p>The finished product uses the Red in the Robotics Team logo as a start, with the palette consisting of colors
+            around this hue. Small components occupy the top slanted trapezium, consisting of aspects from software,
+            electronics and mechanical. Silhouettes of three robots from the three sub-teams are placed on the right,
+            representing the Robotics Team as a whole.</p>
     </section>
 
     <section>
@@ -320,17 +381,22 @@
 
         <ul>
             <li><a href="https://www.facebook.com/hkustuwrobot/">HKUST Underwater Robot Competition Facebook</a></li>
-            <li><a href="https://github.com/LeeChunHei/Underwater_Robot_NFC">https://github.com/LeeChunHei/Underwater_Robot_NFC</a></li>
+            <li><a href="https://github.com/LeeChunHei/Underwater_Robot_NFC">https://github.com/LeeChunHei/Underwater_Robot_NFC</a>
+            </li>
         </ul>
     </section>
 
     <section>
         <h2>ROV Mission Helper (2017)</h2>
-        <p>The ROV Mission Helper was developed for The IET/MATE Hong Kong Underwater Robot Challenge 2017. It is a score keeping system designed specifically for the 15-min competition trial run, to replace pen and paper for calculating final rankings in previous years. Additionally, a detailed copy of the scores summary is emailed to the playing team after their trial.</p>
+        <p>The ROV Mission Helper was developed for The IET/MATE Hong Kong Underwater Robot Challenge 2017. It is a
+            score keeping system designed specifically for the 15-min competition trial run, to replace pen and paper
+            for calculating final rankings in previous years. Additionally, a detailed copy of the scores summary is
+            emailed to the playing team after their trial.</p>
 
         <h3>UI</h3>
 
-        <p>The UI is designed responsively to be used best on a tablet for its spaciousness and works well even on a phone.</p>
+        <p>The UI is designed responsively to be used best on a tablet for its spaciousness and works well even on a
+            phone.</p>
 
         <img class="fluid" src="images/mission_helper/login.png">
         <figure class="figure">Login screen.</figure>
@@ -361,15 +427,18 @@
             <li>jQuery, Bootstrap for front-end</li>
         </ul>
 
-        <p>Different score sheets are described in JSON format, (including the above vetting and trial sheets). They are then loaded by the server and a new MySQL table is created for each score sheet. And they are displayed in a list in the welcome screen.</p>
+        <p>Different score sheets are described in JSON format, (including the above vetting and trial sheets). They are
+            then loaded by the server and a new MySQL table is created for each score sheet. And they are displayed in a
+            list in the welcome screen.</p>
     </section>
 
     <section>
         <h2>MATE ROV 2017 All-Rounded Winner - HKUST Epoxsea Beluga (2017)</h2>
 
-        <p>I was in the HKUST Robotics Team ROV subteam in 2017. For the design aspect, I designed the color and typography style guides for the technical documentation.</p>
+        <p>I was in the HKUST Robotics Team ROV subteam in 2017. For the design aspect, I designed the color and
+            typography style guides for the technical documentation.</p>
 
-        <embed type="application/pdf" src="files/HKUST_EPOXSEA_TechReport_2017.pdf" class="fluid" >
+        <embed type="application/pdf" src="files/HKUST_EPOXSEA_TechReport_2017.pdf" class="fluid">
 
         <h3>Design</h3>
 
@@ -392,13 +461,15 @@
             </div>
         </div>
 
-        <p>Color choices of the design surrounds the oceanic teal color. The typeface was custom crafted from geometric shapes. The overall pattern of the design is low-poly.</p>
+        <p>Color choices of the design surrounds the oceanic teal color. The typeface was custom crafted from geometric
+            shapes. The overall pattern of the design is low-poly.</p>
     </section>
 
     <section>
         <h2>Procal - Programmable Android Calculator (2016)</h2>
 
-        <p>This app was made for the HKUST Mobile App Design Contest in 2016 by a team of 4. The concept was to make a CASIO-FX50 program compatible calculator app. The team is as follows:</p>
+        <p>This app was made for the HKUST Mobile App Design Contest in 2016 by a team of 4. The concept was to make a
+            CASIO-FX50 program compatible calculator app. The team is as follows:</p>
 
         <ul>
             <li>Daniel Cheung: <a href="https://github.com/danvim">https://github.com/danvim</a></li>
@@ -439,15 +510,22 @@
 
         <ul>
             <li><a href="https://github.com/danvim/procal">https://github.com/danvim/procal</a> App Interface</li>
-            <li><a href="https://github.com/danvim/procalparsing">https://github.com/danvim/procalparsing</a> Procal Parser backend</li>
+            <li><a href="https://github.com/danvim/procalparsing">https://github.com/danvim/procalparsing</a> Procal
+                Parser backend
+            </li>
         </ul>
     </section>
 
     <section>
         <h2>Newman Catholic College Website - Where I started (2014-2016)</h2>
-        <p>This is the website of my secondary school. And where I started learning web. I developed the framework for my school website during my Form 3-6 (Grade 9-12) years. The website was like Apple's website in 1997: stuck to the top left hand corner of my LCD monitor, too many image buttons etc. It was typical of 90s to early 2000s style.</p>
+        <p>This is the website of my secondary school. And where I started learning web. I developed the framework for
+            my school website during my Form 3-6 (Grade 9-12) years. The website was like Apple's website in 1997: stuck
+            to the top left hand corner of my LCD monitor, too many image buttons etc. It was typical of 90s to early
+            2000s style.</p>
 
-        <p>I have upgraded the once completely static web server, from requiring to edit source HTML to show updates, to a more dynamic WIMP stack. I had more plans with the site then, but it was the first time I had to learn to reconcile in design choices with my first ever "design client".</p>
+        <p>I have upgraded the once completely static web server, from requiring to edit source HTML to show updates, to
+            a more dynamic WIMP stack. I had more plans with the site then, but it was the first time I had to learn to
+            reconcile in design choices with my first ever "design client".</p>
 
         <div class="split-col">
             <div>
@@ -463,10 +541,14 @@
             <div class="shade reverse"></div>
         </div>
 
-        <figure class="figure">First version. This is before I have discovered Bootstrap. The layout was the same as the original, and it had been a bit rough before I was permitted to alter the layout later.</figure>
+        <figure class="figure">First version. This is before I have discovered Bootstrap. The layout was the same as the
+            original, and it had been a bit rough before I was permitted to alter the layout later.
+        </figure>
 
         <img class="fluid" src="images/newman/latest.png">
-        <figure class="figure">Current version (2013). This version uses Bootstrap 3 for a responsive design, jQuery and custom PHP + MySQL.</figure>
+        <figure class="figure">Current version (2013). This version uses Bootstrap 3 for a responsive design, jQuery and
+            custom PHP + MySQL.
+        </figure>
 
         <p>The website had several requirements:</p>
 
@@ -475,7 +557,9 @@
             <li>All elements in the original homepage must be preserved.</li>
         </ul>
 
-        <p>The project did not include a complete revamp of the entire website, since the scale was too big for one person to handle. Instead, newly updated web pages would utilize the newly defined universal styles for display, and older web pages would be left as is.</p>
+        <p>The project did not include a complete revamp of the entire website, since the scale was too big for one
+            person to handle. Instead, newly updated web pages would utilize the newly defined universal styles for
+            display, and older web pages would be left as is.</p>
 
         <p>Since the inclusion of database, data can be searched. New UI has been added to accommodate this.</p>
 
